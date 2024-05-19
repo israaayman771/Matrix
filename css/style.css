@@ -372,10 +372,97 @@ input:checked,
 }
 
 /*#endregion companies section*/
+/*#region compare section*/
+.compare-section{
+  padding: 4rem 0;
+}
+.compare-div-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 
 
+.compare-div-container h3,
+.question-div-container h4 {
+  text-align: center;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.compare-div-container span,
+.question-div-container span {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+table {
+  width: 100%;
+  padding: 5rem 0;
+}
 
 
+.compare-table-tb th {
+  text-align: left;
+}
+
+td {
+  text-align: center;
+}
+
+.compare-table-tb svg {
+  width: 15px;
+}
+
+.compare-div-btm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.compare-div-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.compare-div-btm h6 {
+  font-size: 16px;
+}
+
+.compare-div-btm p {
+  font-size: 16px;
+  color: var(--dark-gray);
+}
+
+.compare-div-btm ul {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.compare-div-btm img {
+  width: 27px;
+}
+.compare-div-feature svg {
+  width: 10px;
+}
+@media (max-width:800px){
+  .compare-div-btm{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .compare-div-feature ul{
+    justify-content: center;
+  }
+}
 
 /*#region questions section*/
 .question-section {
@@ -389,18 +476,8 @@ input:checked,
   gap: 3rem;
 }
 
-.question-div-container h4 {
-  text-align: center;
-  font-size: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
 
-.question-div-container span {
-  font-size: 15px;
-  font-weight: 400;
-}
+
 
 .question-div-col-12 {
   display: flex;
@@ -433,7 +510,8 @@ input:checked,
 .questions-answers-col ul {
   list-style: revert;
 }
-.question-div-a{
+
+.question-div-a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,10 +520,12 @@ input:checked,
   font-size: 15px;
   font-weight: 600;
 }
-.question-div-a a{
+
+.question-div-a a {
   color: var(--blue);
 }
-.question-div-a a:hover{
+
+.question-div-a a:hover {
   text-decoration: underline;
 }
 
@@ -468,20 +548,25 @@ input:checked,
     text-align: center;
     align-items: center;
   }
-  .questions-answers-col p ,.questions-answers-col ul {
-  width: 50%;
+
+  .questions-answers-col p,
+  .questions-answers-col ul {
+    width: 50%;
+  }
+
+  .question-div-a {
+    flex-direction: column;
+  }
 }
-.question-div-a{
-  flex-direction: column;
-}
-}
+
 /*#endregion question section*/
 
 /*#region try section*/
-.try-section{
+.try-section {
   padding: 8rem 0;
 }
-.try-div-container{
+
+.try-div-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -491,83 +576,144 @@ input:checked,
   background-image: linear-gradient(254deg, rgb(144 144 240), var(--purple));
   border-radius: 10px;
 }
-.try-div-container h6{
-  font-size:50px ;
+
+.try-div-container h6 {
+  font-size: 50px;
   color: white;
 }
-.try-div-container p{
+
+.try-div-container p {
   font-size: 20px;
-    color: white;
+  color: white;
 }
-.try-div-container a{
+
+.try-div-container a {
   padding: 15px 20px;
-    color: white;
-    background-color: var(--blue);
-    border-radius: 7px;
-    width: 20%;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
+  color: white;
+  background-color: var(--blue);
+  border-radius: 7px;
+  width: 20%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
 }
-.try-div-container a:hover{
+
+.try-div-container a:hover {
   background-color: white;
   color: var(--blue);
   transition: 0.3s;
 }
-.try-div-container span{
+
+.try-div-container span {
   font-size: 15px;
-    font-weight: 400;
-    color: white;
+  font-weight: 400;
+  color: white;
 }
-@media (max-width:800px){
-  .try-div-container{
+
+@media (max-width:800px) {
+  .try-div-container {
     text-align: center;
     align-items: center;
   }
-  .try-div-container a{
+
+  .try-div-container a {
     width: 85%;
   }
 }
+
 /*#endregion try section*/
 
 /*#region footer*/
-.footer-container{
+.footer-container {
   display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+  flex-direction: column;
+  gap: 5rem;
 }
-.footer-div-company{
+
+.footer-div-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-div-company {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
-.footer-div-company h6 ,.footer-div-contact h6{
+
+.footer-div-company h6,
+.footer-div-contact h6 {
   font-size: 20px;
 }
-.footer-div-company ul{
+
+.footer-div-company ul {
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.footer-div-contact a{
+.footer-div-company a ,.footer-div-contact p{
+  font-size: 16px;
+  color: var(--dark-gray);
+}
+.footer-div-contact a {
   font-size: 15px;
   color: var(--dark-gray);
 }
-.footer-div-contact li svg{
+
+.footer-div-contact li svg {
   width: 20px;
 }
-.footer-div-contact{
+
+.footer-div-contact {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-div-contact ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  gap: 5px;
+}
+
+.footer-div-btm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.footer-div-btm svg{
+  width: 15px;
+}
+.footer-div-btm p{
+  font-size: 16px;
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+@media (max-width:800px){
+  .footer-container{
     gap: 1rem;
-}
-.footer-div-contact ul{
-  display: flex;
+  }
+  .footer-div-top{
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: 0;
-    gap: 5px;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-div-contact ul{
+    justify-content: center;
+  }
+  .footer-div-btm {
+    flex-direction: column;
+  }
 }
+/*#endregion footer*/
+
